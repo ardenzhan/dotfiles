@@ -1,0 +1,10 @@
+# General
+.DS_Store
+
+# Thumbnails
+._*
+
+# Vim
+*~
+*.swp
+*.swo

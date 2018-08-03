@@ -1,0 +1,5 @@
+[user]
+	name = Arden Zhan
+	email = arden@assetpanda.com
+[core]
+	excludesfile = ~/.gitignore_global
