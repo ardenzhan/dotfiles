@@ -47,5 +47,5 @@ export PATH="/usr/local/opt/mongodb@3.4/bin:$PATH"
 eval "$(rbenv init -)"
 
 # zsh plugins
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ${(q-)PWD}/zsh-autosuggestions/zsh-autosuggestions.zsh
