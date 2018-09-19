@@ -17,7 +17,6 @@ alias ll="ls -al"
 
 # Projects
 alias panda="cd ~/Code/asset_panda_web_app/"
-alias pandaw="cd ~/Code/asset_panda_worker/"
 alias grav="cd ~/Code/gravity-cloud/"
 alias prac="cd ~/Code/hawaiianbbq/practical-vim/"
 alias hobby="cd ~/Code/hobby-sci/"
@@ -28,6 +27,7 @@ alias gs="git status"
 alias gb="git branch"
 alias gc="git checkout"
 alias gcm="git checkout master"
+alias gd="git diff"
 alias gl="git pull"
 
 # Rails
