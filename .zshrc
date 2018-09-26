@@ -17,9 +17,8 @@ alias ll="ls -al"
 
 # Projects
 alias panda="cd ~/Code/asset_panda_web_app/"
-alias grav="cd ~/Code/gravity-cloud/"
 alias prac="cd ~/Code/hawaiianbbq/practical-vim/"
-alias hobby="cd ~/Code/hobby-sci/"
+alias m101="cd ~/Code/mongoDB-university/m101js/"
 
 # Git
 alias g="git"
@@ -41,7 +40,11 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 # mongo
-export PATH="/usr/local/opt/mongodb@3.4/bin:$PATH"
+# export PATH="/usr/local/opt/mongodb@4.0/bin:$PATH"
+alias mongo4="cd /usr/local/opt/mongodb@4.0/bin"
+alias mongod4="./mongod --dbpath='/usr/local/var/db/mongodb@4.0'"
+alias mongo34="cd /usr/local/opt/mongodb@3.4/bin"
+alias mongod34="./mongod --dbpath='/usr/local/var/db/mongodb@3.4'"
 
 # rbenv
 eval "$(rbenv init -)"
