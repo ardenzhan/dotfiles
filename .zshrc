@@ -34,26 +34,12 @@ alias rs="rails server"
 alias rc="rails console"
 alias be="bundle exec"
 
-# nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" --no-use
-
-load-nvmrc() {
-  if [ -e .nvmrc ]; then
-    local nvmrc_node_version="$(nvm version "$(cat .nvmrc)")"
-
-    if [ "$nvmrc_node_version" = "N/A" ]; then
-      nvm install
-    elif [ "$nvmrc_node_version" != "$(nvm version)" ]; then
-      nvm use
-    fi
-  fi
-}
-add-zsh-hook chpwd load-nvmrc
-
 # mongo
 alias mongod4="mongod --dbpath='/usr/local/var/db/mongodb@4.0'"
 alias mongod34="mongod --dbpath='/usr/local/var/db/mongodb@3.4'"
+
+# nodenv
+export PATH="$HOME/.nodenv/shims:${PATH}"
 
 # rbenv
 export PATH="$HOME/.rbenv/shims:${PATH}"

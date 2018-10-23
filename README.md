@@ -1,12 +1,14 @@
 # dotfiles
 
-## nvm
-Lazy loads nvm if .nvmrc exists. Otherwise, `nvm use default`
+## nodenv
+Sets up shims path
+
+`nodenv rehash` after installing new versions of Node or installing npm packages that provide executable binaries
 
 ## rbenv
-https://github.com/rbenv/rbenv#how-rbenv-hooks-into-your-shell
+Sets up shims path
 
-Instead of running `rbenv init`, only sets up shims path
+`rbenv rehash` after installing new versions of Ruby or installing gems that provide commands
 
 ## mongo
 homebrew stores data folder (usually /db/data) in `/usr/local/var/mongodb`.
