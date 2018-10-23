@@ -11,7 +11,12 @@ SAVEHIST=1000
 HISTFILE=~/.history
 
 # Unix
-alias ls="ls -GF"
+if [ "$(uname)" == "Darwin" ]; then
+  alias ls="ls -GF"
+elif [ "$(uname -s)" == "Linux" ]; then
+  export LS_COLORS="ow=01;34"
+  alias ls="ls -F --color"
+fi
 alias la="ls -a"
 alias ll="ls -al"
 
