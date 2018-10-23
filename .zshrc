@@ -40,12 +40,11 @@ export NVM_DIR="$HOME/.nvm"
 
 load-nvmrc() {
   if [ -e .nvmrc ]; then
-    local node_version="$(nvm version)"
-    local nvmrc_node_version="$(nvm version "$(cat ".nvmrc")")"
+    local nvmrc_node_version="$(nvm version "$(cat .nvmrc)")"
 
     if [ "$nvmrc_node_version" = "N/A" ]; then
       nvm install
-    elif [ "$nvmrc_node_version" != "$node_version" ]; then
+    elif [ "$nvmrc_node_version" != "$(nvm version)" ]; then
       nvm use
     fi
   fi
@@ -57,7 +56,7 @@ alias mongod4="mongod --dbpath='/usr/local/var/db/mongodb@4.0'"
 alias mongod34="mongod --dbpath='/usr/local/var/db/mongodb@3.4'"
 
 # rbenv
-eval "$(rbenv init -)"
+export PATH="$HOME/.rbenv/shims:${PATH}"
 
 # zsh plugins
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

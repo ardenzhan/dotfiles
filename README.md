@@ -3,6 +3,11 @@
 ## nvm
 Lazy loads nvm if .nvmrc exists. Otherwise, `nvm use default`
 
+## rbenv
+https://github.com/rbenv/rbenv#how-rbenv-hooks-into-your-shell
+
+Instead of running `rbenv init`, only sets up shims path
+
 ## mongo
 homebrew stores data folder (usually /db/data) in `/usr/local/var/mongodb`.
 the bins are at `/usr/local/opt/`.
