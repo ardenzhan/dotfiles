@@ -1,6 +1,8 @@
 autoload -U promptinit; promptinit
 prompt pure
 
+autoload -U compinit; compinit -C -d ~/.zsh/.zcompdump
+
 setopt autocd
 
 # History

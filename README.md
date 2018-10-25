@@ -1,5 +1,10 @@
 # dotfiles
 
+## zshrc
+http://zsh.sourceforge.net/Doc/Release/Completion-System.html
+
+`compinit -d ~/.zsh/.zshrc` without -C option to check if there are new functions for completion files
+
 ## nodenv
 Sets up shims path
 
