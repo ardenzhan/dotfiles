@@ -13,6 +13,8 @@ set showmatch
 set ruler
 set incsearch hlsearch ignorecase smartcase
 
+set backspace=indent,eol,start
+
 " Highlights
 hi SpecialKey ctermfg=DarkGray
 hi LineNr ctermfg=DarkGray
