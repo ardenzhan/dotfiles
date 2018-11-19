@@ -25,3 +25,6 @@ set wildmode=list:longest,full
 
 " Autoread
 set autoread
+
+" fzf
+set rtp+=/usr/local/opt/fzf
