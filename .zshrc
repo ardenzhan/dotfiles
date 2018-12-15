@@ -10,8 +10,8 @@ setopt autocd
 # History
 setopt appendhistory
 setopt hist_ignore_dups
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=10000
+SAVEHIST=10000
 HISTFILE=~/.history
 
 # Unix
@@ -60,3 +60,6 @@ export PATH="$HOME/.rbenv/shims:${PATH}"
 # zsh plugins
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

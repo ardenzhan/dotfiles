@@ -6,6 +6,10 @@ curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
 # vim-commentary
 git clone https://github.com/tpope/vim-commentary.git ~/.vim/bundle/vim-commentary
+# fzf.vim
+git clone https://github.com/junegunn/fzf.vim.git ~/.vim/bundle/fzf.vim
+# vim-signify
+git clone https://github.com/mhinz/vim-signify.git ~/.vim/bundle/vim-signify
 
 # zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
