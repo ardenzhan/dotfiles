@@ -3,6 +3,8 @@ prompt pure
 
 autoload -U compinit; compinit -C -d ~/.zsh/.zcompdump
 
+bindkey -v
+
 setopt autocd
 
 # History
