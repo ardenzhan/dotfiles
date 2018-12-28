@@ -30,6 +30,7 @@ alias ll="ls -al"
 alias panda="cd ~/Code/asset_panda_web_app/"
 alias prac="cd ~/Code/hawaiianbbq/practical-vim/"
 alias m101="cd ~/Code/mongoDB-university/m101js/"
+alias guru="cd ~/Code/a-cloud-guru/"
 
 # Git
 alias g="git"
@@ -61,3 +62,4 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_CTRL_T_OPTS="--preview '(highlight -O ansi -l {} 2> /dev/null || cat {} || tree -C {}) 2> /dev/null | head -200'"
