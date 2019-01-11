@@ -7,6 +7,7 @@ set list listchars=tab:→\ ,trail:･,precedes:«,extends:»
 set expandtab tabstop=2 softtabstop=2 shiftwidth=2
 
 set number
+set relativenumber
 set numberwidth=3
 set showcmd
 set showmatch
@@ -41,3 +42,11 @@ let g:signify_sign_delete_first_line  = '•'
 let g:signify_sign_change             = '•'
 let g:signify_sign_changedelete       = g:signify_sign_change
 highlight SignColumn ctermbg=NONE cterm=NONE guibg=NONE gui=NONE
+
+" auto expand brackets
+inoremap (; (<CR>);<C-c>O
+inoremap (, (<CR>),<C-c>O
+inoremap {; {<CR>};<C-c>O
+inoremap {, {<CR>},<C-c>O
+inoremap [; [<CR>];<C-c>O
+inoremap [, [<CR>],<C-c>O
