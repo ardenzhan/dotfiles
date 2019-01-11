@@ -17,7 +17,7 @@ HISTFILE=~/.history
 # Unix
 case `uname` in
   Darwin)
-    alias ls="ls -GF"
+    alias ls="ls -1GF"
   ;;
   Linux)
     export LS_COLORS="ow=01;34"
@@ -47,10 +47,6 @@ alias gl="git pull"
 alias rs="rails server"
 alias rc="rails console"
 alias be="bundle exec"
-
-# mongo
-alias mongod4="mongod --dbpath='/usr/local/var/db/mongodb@4.0'"
-alias mongod34="mongod --dbpath='/usr/local/var/db/mongodb@3.4'"
 
 # nodenv
 export PATH="$HOME/.nodenv/shims:${PATH}"
