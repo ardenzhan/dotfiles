@@ -21,7 +21,10 @@ case `uname` in
   ;;
   Linux)
     export LS_COLORS="ow=01;34"
-    alias ls="ls -F --color"
+    alias ls="ls -1F --color"
+
+    eval "$(ssh-agent -s)"
+    ssh-add ~/.ssh/id_rsa
   ;;
 esac
 
