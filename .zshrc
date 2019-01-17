@@ -32,10 +32,11 @@ alias la="ls -a"
 alias ll="ls -al"
 
 # Projects
-alias panda="cd ~/Code/asset_panda_web_app/"
-alias prac="cd ~/Code/hawaiianbbq/practical-vim/"
-alias m101="cd ~/Code/mongoDB-university/m101js/"
-alias guru="cd ~/Code/a-cloud-guru/"
+alias panda="cd ~/code/asset_panda_web_app/"
+alias apo="cd ~/code/apo-billing-reports-api/"
+alias prac="cd ~/code/hawaiianbbq/practical-vim/"
+alias m101="cd ~/code/mongoDB-university/m101js/"
+alias guru="cd ~/code/a-cloud-guru/"
 
 # Git
 alias g="git"
