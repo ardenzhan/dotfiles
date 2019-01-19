@@ -33,7 +33,7 @@ alias la="ls -a"
 alias ll="ls -al"
 
 # Projects
-alias panda="cd ~/code/asset_panda_web_app/"
+alias panda="cd ~/code/ap-web/"
 alias apo="cd ~/code/apo-billing-reports-api/"
 alias prac="cd ~/code/hawaiianbbq/practical-vim/"
 alias m101="cd ~/code/mongoDB-university/m101js/"
