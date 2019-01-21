@@ -14,6 +14,9 @@ set showmatch
 set ruler
 set incsearch hlsearch ignorecase smartcase
 
+set splitbelow
+set splitright
+
 set backspace=indent,eol,start
 
 " Highlights
