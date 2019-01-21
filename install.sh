@@ -6,7 +6,7 @@ ZSH="$HOME/.zsh"
 
 mkdir -p $VIM/autoload \
          $VIM/bundle \
-         $ZSH/zfunctions
+         $ZSH/.zfunctions
 
 # vim-pathogen
 curl -LSso $VIM/autoload/pathogen.vim https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim
@@ -20,14 +20,15 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH/zsh-synt
 git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH/zsh-autosuggestions
 # zsh theme
 git clone https://github.com/sindresorhus/pure.git $ZSH/pure
-ln -sf "$ZSH/pure/pure.zsh" "$ZSH/zfunctions/prompt_pure_setup"
-ln -sf "$ZSH/pure/async.zsh" "$ZSH/zfunctions/async"
+ln -sf "$ZSH/pure/pure.zsh" "$ZSH/.zfunctions/prompt_pure_setup"
+ln -sf "$ZSH/pure/async.zsh" "$ZSH/.zfunctions/async"
 
 # symlink configs
 DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-ln -sf "$DOTFILES_DIR/.gitconfig" ~
-ln -sf "$DOTFILES_DIR/.gitignore_global" ~
-ln -sf "$DOTFILES_DIR/.vimrc" ~
-ln -sf "$DOTFILES_DIR/.zshrc" ~
-ln -sf "$DOTFILES_DIR/.tmux.conf" ~
-ln -sf "$DOTFILES_DIR/.mongorc.js" ~
+ln -sf "$DOTFILES_DIR/.aliases" $HOME
+ln -sf "$DOTFILES_DIR/.gitconfig" $HOME
+ln -sf "$DOTFILES_DIR/.gitignore_global" $HOME
+ln -sf "$DOTFILES_DIR/.vimrc" $HOME
+ln -sf "$DOTFILES_DIR/.zshrc" $HOME
+ln -sf "$DOTFILES_DIR/.tmux.conf" $HOME
+ln -sf "$DOTFILES_DIR/.mongorc.js" $HOME

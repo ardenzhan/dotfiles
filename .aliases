@@ -1,0 +1,28 @@
+# Unix
+case `uname` in
+  Darwin)
+    alias ls="ls -1GF"
+  ;;
+  Linux)
+    export LS_COLORS="ow=01;34"
+    alias ls="ls -1F --color"
+  ;;
+esac
+
+alias la="ls -a"
+alias ll="ls -al"
+
+# Projects
+alias panda="cd $HOME/code/ap-web/"
+alias apo="cd $HOME/code/apo-billing-reports-api/"
+alias prac="cd $HOME/code/hawaiianbbq/practical-vim/"
+alias m101="cd $HOME/code/mongoDB-university/m101js/"
+alias guru="cd $HOME/code/a-cloud-guru/"
+
+# Git
+alias gs="git status"
+alias gb="git branch"
+alias gc="git checkout"
+alias gcm="git checkout master"
+alias gd="git diff"
+alias gl="git pull"
