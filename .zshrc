@@ -5,6 +5,7 @@ prompt pure
 autoload -U compinit; compinit -C -d $HOME/.zsh/.zcompdump
 
 bindkey -v
+export EDITOR=$(which vim)
 
 setopt autocd
 
