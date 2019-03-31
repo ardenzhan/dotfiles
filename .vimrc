@@ -54,3 +54,5 @@ inoremap {; {<CR>};<C-c>O
 inoremap {, {<CR>},<C-c>O
 inoremap [; [<CR>];<C-c>O
 inoremap [, [<CR>],<C-c>O
+
+colorscheme photon
