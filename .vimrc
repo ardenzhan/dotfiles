@@ -22,9 +22,9 @@ hi LineNr     ctermfg=DarkGray
 hi Search     ctermbg=Blue
 hi WildMenu   ctermbg=Blue
 " signify and vimdiff
-hi DiffAdd    ctermbg=none ctermfg=green
-hi DiffDelete ctermbg=none ctermfg=red
-hi DiffChange ctermbg=none ctermfg=172
+hi DiffAdd    ctermfg=Green ctermbg=NONE
+hi DiffDelete ctermfg=Red ctermbg=NONE
+hi DiffChange ctermfg=DarkYellow ctermbg=NONE
 
 " Tab Completion
 set wildmenu
