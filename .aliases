@@ -17,7 +17,6 @@ alias panda="cd $HOME/code/ap-web/"
 alias apo="cd $HOME/code/apo-billing-reports-api/"
 alias prac="cd $HOME/code/hawaiianbbq/practical-vim/"
 alias m101="cd $HOME/code/mongoDB-university/m101js/"
-alias guru="cd $HOME/code/a-cloud-guru/"
 
 # Git
 alias gs="git status"
