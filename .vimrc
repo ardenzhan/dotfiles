@@ -37,6 +37,7 @@ set autoread
 set rtp+=/usr/local/opt/fzf
 nmap <Leader>b :Buffers<CR>
 nmap <Leader>f :Files<CR>
+nmap <Leader>s :Ag<Space>
 
 " signify
 let g:signify_vcs_list                = [ 'git' ]
