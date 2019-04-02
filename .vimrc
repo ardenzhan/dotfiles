@@ -2,6 +2,8 @@ execute pathogen#infect()
 filetype plugin indent on
 syntax on
 
+let mapleader = ","
+
 " Presentation
 set list listchars=tab:→\ ,trail:･,precedes:«,extends:»
 set expandtab tabstop=2 softtabstop=2 shiftwidth=2
