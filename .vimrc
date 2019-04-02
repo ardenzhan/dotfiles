@@ -2,8 +2,6 @@ execute pathogen#infect()
 filetype plugin indent on
 syntax on
 
-let mapleader = ","
-
 " Presentation
 set list listchars=tab:→\ ,trail:･,precedes:«,extends:»
 set expandtab tabstop=2 softtabstop=2 shiftwidth=2
@@ -37,9 +35,16 @@ set autoread
 
 " fzf
 set rtp+=/usr/local/opt/fzf
-nmap <Leader>b :Buffers<CR>
-nmap <Leader>f :Files<CR>
-nmap <Leader>s :Ag<Space>
+nmap <Space>b :Buffers<CR>
+nmap <Space>f :Files<CR>
+nmap <Space>s :Ag<Space>
+
+" fugitive git
+nmap <Space>gb :Gblame<CR>
+nmap <Space>gd :Gdiff
+
+" netrw
+nmap <Space>d :Vex<CR>
 
 " signify
 let g:signify_vcs_list                = [ 'git' ]
