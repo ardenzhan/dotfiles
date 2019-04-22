@@ -69,4 +69,4 @@ let g:signify_sign_change             = '•'
 let g:signify_sign_changedelete       = g:signify_sign_change
 highlight SignColumn ctermbg=NONE cterm=NONE guibg=NONE gui=NONE
 
-colorscheme photon
+colorscheme nord
