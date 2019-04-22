@@ -6,9 +6,9 @@ syntax on
 set list listchars=tab:→\ ,trail:･,precedes:«,extends:»
 set expandtab tabstop=2 softtabstop=2 shiftwidth=2
 
-set number
-set relativenumber
-set numberwidth=3
+" set number
+" set relativenumber
+" set numberwidth=3
 set showcmd
 set showmatch
 set ruler
