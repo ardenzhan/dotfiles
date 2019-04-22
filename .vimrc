@@ -69,12 +69,4 @@ let g:signify_sign_change             = '•'
 let g:signify_sign_changedelete       = g:signify_sign_change
 highlight SignColumn ctermbg=NONE cterm=NONE guibg=NONE gui=NONE
 
-" auto expand brackets
-inoremap (; (<CR>);<C-c>O
-inoremap (, (<CR>),<C-c>O
-inoremap {; {<CR>};<C-c>O
-inoremap {, {<CR>},<C-c>O
-inoremap [; [<CR>];<C-c>O
-inoremap [, [<CR>],<C-c>O
-
 colorscheme photon
