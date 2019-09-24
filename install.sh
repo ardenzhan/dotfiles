@@ -18,6 +18,7 @@ git clone https://github.com/mhinz/vim-signify.git $VIM/bundle/vim-signify
 git clone https://github.com/romainl/vim-cool.git $VIM/bundle/vim-cool
 # vim colorschemes
 curl -LSso $VIM/colors/photon.vim https://raw.githubusercontent.com/axvr/photon.vim/master/colors/photon.vim
+curl -LSso $VIM/colors/nord.vim https://raw.githubusercontent.com/arcticicestudio/nord-vim/master/colors/nord.vim
 
 # zsh plugins
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH/zsh-syntax-highlighting
