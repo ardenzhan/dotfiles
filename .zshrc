@@ -1,4 +1,4 @@
-fpath=( "$HOME/.zsh/.zfunctions" $fpath )
+fpath=( "$HOME/.zsh/zfunctions" $fpath )
 autoload -U promptinit; promptinit
 prompt pure
 

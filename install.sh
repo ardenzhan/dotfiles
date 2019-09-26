@@ -7,7 +7,7 @@ ZSH="$HOME/.zsh"
 mkdir -p $VIM/autoload \
          $VIM/bundle \
          $VIM/colors \
-         $ZSH/.zfunctions
+         $ZSH/zfunctions
 
 # vim-pathogen
 curl -LSso $VIM/autoload/pathogen.vim https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim
@@ -26,8 +26,8 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH/zsh-synt
 git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH/zsh-autosuggestions
 # zsh theme
 git clone https://github.com/sindresorhus/pure.git $ZSH/pure
-ln -sf "$ZSH/pure/pure.zsh" "$ZSH/.zfunctions/prompt_pure_setup"
-ln -sf "$ZSH/pure/async.zsh" "$ZSH/.zfunctions/async"
+ln -sf "$ZSH/pure/pure.zsh" "$ZSH/zfunctions/prompt_pure_setup"
+ln -sf "$ZSH/pure/async.zsh" "$ZSH/zfunctions/async"
 
 # symlink configs
 DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
