@@ -13,6 +13,7 @@ mkdir -p $VIM/autoload \
 curl -LSso $VIM/autoload/pathogen.vim https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim
 # vim plugins
 git clone https://github.com/tpope/vim-commentary.git $VIM/bundle/vim-commentary
+git clone https://github.com/tpope/vim-fugitive.git $VIM/bundle/vim-fugitive
 git clone https://github.com/junegunn/fzf.vim.git $VIM/bundle/fzf.vim
 git clone https://github.com/mhinz/vim-signify.git $VIM/bundle/vim-signify
 git clone https://github.com/romainl/vim-cool.git $VIM/bundle/vim-cool
