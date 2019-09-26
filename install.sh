@@ -36,4 +36,3 @@ ln -sf "$DOTFILES_DIR/.gitignore_global" $HOME
 ln -sf "$DOTFILES_DIR/.vimrc" $HOME
 ln -sf "$DOTFILES_DIR/.zshrc" $HOME
 ln -sf "$DOTFILES_DIR/.tmux.conf" $HOME
-ln -sf "$DOTFILES_DIR/.mongorc.js" $HOME
