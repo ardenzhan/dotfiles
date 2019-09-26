@@ -9,23 +9,27 @@ mkdir -p $VIM/autoload \
          $VIM/colors \
          $ZSH/zfunctions
 
+get_repo() {
+  git clone $1 $2 2> /dev/null || git -C $2 pull
+}
+
 # vim-pathogen
 curl -LSso $VIM/autoload/pathogen.vim https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim
 # vim plugins
-git clone https://github.com/tpope/vim-commentary.git $VIM/bundle/vim-commentary
-git clone https://github.com/tpope/vim-fugitive.git $VIM/bundle/vim-fugitive
-git clone https://github.com/junegunn/fzf.vim.git $VIM/bundle/fzf.vim
-git clone https://github.com/mhinz/vim-signify.git $VIM/bundle/vim-signify
-git clone https://github.com/romainl/vim-cool.git $VIM/bundle/vim-cool
+get_repo https://github.com/tpope/vim-commentary.git $VIM/bundle/vim-commentary
+get_repo https://github.com/tpope/vim-fugitive.git $VIM/bundle/vim-fugitive
+get_repo https://github.com/junegunn/fzf.vim.git $VIM/bundle/fzf.vim
+get_repo https://github.com/mhinz/vim-signify.git $VIM/bundle/vim-signify
+get_repo https://github.com/romainl/vim-cool.git $VIM/bundle/vim-cool
 # vim colorschemes
 curl -LSso $VIM/colors/photon.vim https://raw.githubusercontent.com/axvr/photon.vim/master/colors/photon.vim
 curl -LSso $VIM/colors/nord.vim https://raw.githubusercontent.com/arcticicestudio/nord-vim/master/colors/nord.vim
 
 # zsh plugins
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH/zsh-syntax-highlighting
-git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH/zsh-autosuggestions
+get_repo https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH/zsh-syntax-highlighting
+get_repo https://github.com/zsh-users/zsh-autosuggestions.git $ZSH/zsh-autosuggestions
 # zsh theme
-git clone https://github.com/sindresorhus/pure.git $ZSH/pure
+get_repo https://github.com/sindresorhus/pure.git $ZSH/pure
 ln -sf "$ZSH/pure/pure.zsh" "$ZSH/zfunctions/prompt_pure_setup"
 ln -sf "$ZSH/pure/async.zsh" "$ZSH/zfunctions/async"
 
