@@ -433,9 +433,11 @@
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>240 264 799 448 0 0 1280 800 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>324 134 650 467 0 0 1280 800 </string>
+	<string>324 134 650 459 0 0 1280 800 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>152 38 650 459 0 0 1280 800 </string>
+	<string>204 207 650 459 0 0 1280 800 </string>
+	<key>NSWindow Frame iTerm Window 2</key>
+	<string>173 32 650 459 0 0 1280 800 </string>
 	<key>NeverWarnAboutShortLivedSessions_1142C4E9-35FD-412E-8B36-DAF16C8D0FBA</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_1142C4E9-35FD-412E-8B36-DAF16C8D0FBA_selection</key>
@@ -1171,7 +1173,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Title Components</key>
-			<integer>2</integer>
+			<integer>1</integer>
 			<key>Transparency</key>
 			<real>0.0</real>
 			<key>Unlimited Scrollback</key>
@@ -1207,20 +1209,22 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1280, 800}}</string>
 		<key>topLeft</key>
-		<string>{200, 661}</string>
+		<string>{250, 686}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>5EAFE09D-5419-4236-A7C5-46FEBDBC4E3E</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>3</integer>
+	<integer>4</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
-	<real>591157930.78574204</real>
+	<real>591308219.80136001</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
 	<true/>
+	<key>NoSyncPermissionToShowTip</key>
+	<false/>
 	<key>NoSyncRecordedVariables</key>
 	<dict>
 		<key>0</key>
@@ -1957,7 +1961,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-09-24T02:59:03Z</date>
+	<date>2019-09-26T15:46:41Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SoundForEsc</key>
