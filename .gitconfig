@@ -2,5 +2,6 @@
 	excludesfile = ~/.gitignore_global
 [user]
 	useConfigOnly = true
+	name = Arden Zhan
 [commit]
 	verbose = true
