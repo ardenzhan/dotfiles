@@ -12,12 +12,6 @@ esac
 alias la="ls -a"
 alias ll="ls -al"
 
-# Projects
-alias panda="cd $HOME/code/ap-web/"
-alias apo="cd $HOME/code/apo-billing-reports-api/"
-alias prac="cd $HOME/code/hawaiianbbq/practical-vim/"
-alias m101="cd $HOME/code/mongoDB-university/m101js/"
-
 # Git
 alias gs="git status"
 alias gb="git branch"
@@ -25,3 +19,6 @@ alias gc="git checkout"
 alias gcm="git checkout master"
 alias gd="git diff"
 alias gl="git pull"
+
+# Ruby
+alias be="bundle exec"
