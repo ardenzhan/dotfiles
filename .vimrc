@@ -53,12 +53,12 @@ let g:fzf_colors =
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
 
-" fugitive git
-nmap <Space>gb :Gblame<CR>
-nmap <Space>gd :Gdiff
+" goyo
+nmap <Space>g :Goyo<CR>
 
-" netrw
-nmap <Space>d :Vex<CR>
+" limelight
+nmap <Space>l :Limelight!!<CR>
+let g:limelight_conceal_ctermfg = 8
 
 " signify
 let g:signify_vcs_list                = [ 'git' ]

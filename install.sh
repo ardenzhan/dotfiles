@@ -36,6 +36,8 @@ vim_plugins_repos=(
   https://github.com/tpope/vim-commentary.git
   https://github.com/tpope/vim-fugitive.git
   https://github.com/junegunn/fzf.vim.git
+  https://github.com/junegunn/goyo.vim.git
+  https://github.com/junegunn/limelight.vim.git
   https://github.com/mhinz/vim-signify.git
   https://github.com/romainl/vim-cool.git
 )
