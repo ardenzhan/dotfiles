@@ -37,7 +37,7 @@ set autoread
 set rtp+=/usr/local/opt/fzf
 nmap <Space>b :Buffers<CR>
 nmap <Space>f :Files<CR>
-nmap <Space>s :Ag<Space>
+nnoremap <silent> <Space>s :Ag <C-R><C-W><CR>
 let g:fzf_colors =
 \ { 'fg':      ['fg', 'Normal'],
   \ 'bg':      ['bg', 'Normal'],
