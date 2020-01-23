@@ -15,7 +15,7 @@ get_repo() {
 
   case $2 in
     vim)
-      local local_repo="$VIM/bundle/$repo_name"
+      local local_repo="$VIM/pack/plugins/start/$repo_name"
       ;;
     zsh)
       local local_repo="$ZSH/$repo_name"
