@@ -4,8 +4,7 @@
 VIM="$HOME/.vim"
 ZSH="$HOME/.zsh"
 
-mkdir -p $VIM/autoload \
-         $VIM/bundle \
+mkdir -p $VIM/pack \
          $VIM/colors \
          $ZSH/zfunctions
 
@@ -27,9 +26,6 @@ get_repo() {
 
   git clone $repo_source $local_repo 2> /dev/null || git -C $local_repo pull
 }
-
-# vim-pathogen
-curl -LSso $VIM/autoload/pathogen.vim https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim
 
 echo "VIM"
 vim_plugins_repos=(
