@@ -1,0 +1,21 @@
+/* Hide native tabs */
+#TabsToolbar {
+  visibility: collapse;
+}
+
+/* Remove Page Actions Menu */
+#pageActionButton, #pageActionSeparator {
+  display: none;
+}
+/* Hide 3 bar menu button top right and vertical separator */
+#PanelUI-menu-button {
+  display: none;
+}
+#PanelUI-button {
+  border-image-slice: 0 !important;
+}
+
+/* Hide buttons and spaces on nav bar */
+#nav-bar-overflow-button, #back-button, #forward-button {
+  display: none;
+}
