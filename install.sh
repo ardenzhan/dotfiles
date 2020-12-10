@@ -45,6 +45,7 @@ echo "VIM COLORSCHEMES"
 vim_colors_repos=(
   https://github.com/arcticicestudio/nord-vim.git
   https://github.com/axvr/photon.vim.git
+  https://gitlab.com/yorickpeterse/vim-paper.git
 )
 for repo in ${vim_colors_repos[@]}; do
   get_repo $repo vimcolors
