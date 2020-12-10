@@ -19,3 +19,7 @@ alias gc="git checkout"
 alias gcm="git checkout master"
 alias gd="git diff"
 alias gl="git pull"
+
+# WSL
+alias adb="adb.exe" # Use Windows adb.exe
+alias pc='head -n1 | clip.exe' # Read first line output of pass, then pipe into clip
