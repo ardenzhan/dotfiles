@@ -36,3 +36,6 @@ export FZF_DEFAULT_OPTS='
 
 # adb
 export PATH=$PATH:~/platform-tools
+
+# pass
+export PASSWORD_STORE_ENABLE_EXTENSIONS=true
