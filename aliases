@@ -7,6 +7,9 @@ case `uname` in
     export LS_COLORS="ow=01;34"
     alias ls="ls -1F --color"
   ;;
+  *) # WSL
+    alias adb="adb.exe"
+    alias pc="head -n1 | clip.exe"
 esac
 
 alias la="ls -a"
@@ -20,6 +23,5 @@ alias gcm="git checkout master"
 alias gd="git diff"
 alias gl="git pull"
 
-# WSL
-alias adb="adb.exe" # Use Windows adb.exe
-alias pc='head -n1 | clip.exe' # Read first line output of pass, then pipe into clip
+# Switch Yubikeys
+gpg-connect-agent "scd serialno" "learn --force" /bye
