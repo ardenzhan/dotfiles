@@ -24,4 +24,4 @@ alias gd="git diff"
 alias gl="git pull"
 
 # Switch Yubikeys
-gpg-connect-agent "scd serialno" "learn --force" /bye
+alias keyswitch="gpg-connect-agent "scd serialno" "learn --force" /bye"
