@@ -63,9 +63,10 @@ done
 
 # symlink configs
 DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-ln -sf "$DOTFILES_DIR/.aliases" $HOME
+ln -sf "$DOTFILES_DIR/aliases" $HOME/.aliases
 ln -sf "$DOTFILES_DIR/.gitconfig" $HOME
 ln -sf "$DOTFILES_DIR/.gitignore_global" $HOME
 ln -sf "$DOTFILES_DIR/.vimrc" $HOME
-ln -sf "$DOTFILES_DIR/.zshrc" $HOME
-ln -sf "$DOTFILES_DIR/.tmux.conf" $HOME
+ln -sf "$DOTFILES_DIR/zshrc" $HOME/.zshrc
+ln -sf "$DOTFILES_DIR/zprofile" $HOME/.zprofile
+# ln -sf "$DOTFILES_DIR/.tmux.conf" $HOME
