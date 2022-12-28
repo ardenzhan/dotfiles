@@ -5,3 +5,5 @@
 	name = Arden Zhan
 [commit]
 	verbose = true
+[push]
+	autoSetupRemote = true
