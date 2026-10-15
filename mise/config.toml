@@ -1,0 +1,14 @@
+[settings.self_update]
+auto = true
+
+[bootstrap.packages]
+"brew-cask:zen-browser" = "latest"
+"brew-cask:iina" = "latest"
+"brew-cask:bitwarden" = "latest"
+"brew-cask:ghostty" = "latest"
+
+[dotfiles]
+"~/Library/Application Support/com.colliderli.iina/input_conf/custom.conf" = { source = "~/dotfiles/iina/custom.conf", mode = "symlink" }
+
+[bootstrap.macos.defaults."com.colliderli.iina"]
+currentInputConfigName = "custom"
